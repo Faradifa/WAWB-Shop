@@ -14,22 +14,22 @@
 </head>
 
 <body>
-    <img class="wave" src="img/shape4.png">
+    <img class="wave" src="img/shape3.png">
     <div class="container">
         <div class="img">
             <img src="img/keranjang2.png">
         </div>
         <div class="login-content">
-            <form action="Login.html">
+            <form id="login-form" action="Login.html">
                 <img src="img/logo5.png">
-                <h2 class="title"> Online Shop</h2>
+                <h2 class="title"> O - Shop</h2>
                 <div class="input-div one">
                     <div class="i">
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="div">
                         <h5>Username</h5>
-                        <input type="text" class="input">
+                        <input name="username" type="text" class="input" required>
                     </div>
                 </div>
                 <div class="input-div pass">
@@ -38,18 +38,25 @@
                     </div>
                     <div class="div">
                         <h5>Password</h5>
-                        <input type="password" class="input">
+                        <input name="password" type="password" class="input" required>
                     </div>
                 </div>
-                <a href="#"></a>
+
                 <input type="submit" class="btn" value="Login">
 
                 <div class="text-center">
-                    <p class="text-muted"> Don't have an account?<a href="Register.html">Register</a></p>
+                    <p class="text-muted">
+                        Don't have an account?
+                        <a href="Register.html" class="text-primary font-weight-bold">Register</a>
+                    </p>
                 </div>
+
             </form>
         </div>
     </div>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
     <script type="text/javascript" src="login.js"></script>
 </body>
 
