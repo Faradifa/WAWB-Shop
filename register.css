@@ -58,7 +58,7 @@ form {
 
 .login-content h2 {
     margin: 15px 0;
-    color: #F6C6EA;
+    color: #F38BA0;
     font-size: 2.9rem;
     font-family: myFirstFont;
 }
@@ -189,6 +189,11 @@ a:hover {
     background-position: right;
 }
 
+.text-center p {
+    font-size: 0.9rem;
+    color: #B5EAEA;
+}
+
 @media screen and (max-width: 1050px) {
     .container {
         grid-gap: 5rem;
@@ -199,12 +204,10 @@ a:hover {
     form {
         width: 290px;
     }
-
     .login-content h2 {
         font-size: 2.4rem;
         margin: 8px 0;
     }
-
     .img img {
         width: 400px;
     }
@@ -214,15 +217,12 @@ a:hover {
     .container {
         grid-template-columns: 1fr;
     }
-
     .img {
         display: none;
     }
-
     .wave {
         display: none;
     }
-
     .login-content {
         justify-content: center;
     }
