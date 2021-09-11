@@ -30,3 +30,37 @@ $("#login-form").validate({
 
     }
 });
+$("#my_form").validate({
+      rules: {
+        username : {
+            required: true,
+            minlength:2
+        },
+        password : {
+            required: true,
+            minlength: 5
+        },
+        /* confirm_password : {
+                required: true,
+                minlength: 5,
+        equalTo: "#password"
+        }, */
+        newsletter: "required"
+      },
+      messages : {
+        username: {
+            required: "Silahkan masukkan sebuah nama pengguna",
+            minlength: "Nama pengguna harus berisi paling sedikit 2 characters"
+        },
+        password: {
+            required: "Silahkan isi password",
+            minlength: "Password anda paling sedikit berisi 5 huruf"
+        },
+        /*confirm_password: {
+            required: "Silahkan isi password",
+            minlength: "Password anda paling sedikit berisi 5 huruf",
+            equalTo: "Silahkan masukkan password yang sama seperti di atas"
+        },*/
+            newsletter: "Silahkan checklist opsi anda"
+      }
+    });
