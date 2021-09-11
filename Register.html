@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REGISTER</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,8 +21,8 @@
             <img src="img/keranjang2.png">
         </div>
         <div class="login-content">
-            <form action="Login.html">
-                <img src="img/logo5.png">
+            <form id="login-form" action="Login.html">
+                <img src="img/logo6.png">
                 <h2 class="title"> O - Shop</h2>
                 <div class="input-div one">
                     <div class="i">
@@ -29,7 +30,7 @@
                     </div>
                     <div class="div">
                         <h5>Username</h5>
-                        <input type="text" class="input">
+                        <input name="username" type="text" class="input" required >
                     </div>
                 </div>
                 <div class="input-div pass">
@@ -38,7 +39,7 @@
                     </div>
                     <div class="div">
                         <h5>Password</h5>
-                        <input type="password" class="input">
+                        <input name="password" type="password" class="input" required >
                     </div>
                 </div>
                 <div class="input-div pass">
@@ -47,16 +48,21 @@
                     </div>
                     <div class="div">
                         <h5>Confirm Password</h5>
-                        <input type="password" class="input">
+                        <input name="password" type="password" class="input" required >
                     </div>
                 </div>
-                <a href="#"></a>
+
                 <input type="submit" class="btn" value="Register">
 
             </form>
         </div>
     </div>
-    <script type="text/javascript" src="js/register.js"></script>
+	<!-- JQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- JQuery-validate -->
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <!-- js -->
+    <script type="text/javascript" src="js/login.js"></script>
 </body>
 
 </html>
