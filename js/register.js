@@ -23,7 +23,8 @@ $("#login-form").validate({
     errorElement: "p",
 	rules: {
         username: {
-            required: true
+            required: true,
+            minlength: 8
         },
         password: {
             required: true
@@ -34,7 +35,8 @@ $("#login-form").validate({
 	},
     messages: {
         username: {
-            required: "Silahkan isi username"
+            required: "Silahkan isi username",
+            minlength: "harus 8 char"
         },
         password: {
             required: "Silahkan isi password"
