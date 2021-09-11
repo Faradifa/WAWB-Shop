@@ -52,6 +52,14 @@ form {
     width: 360px;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    color: ;
+}
+
 .login-content img {
     height: 100px;
 }
