@@ -1,6 +1,6 @@
 @font-face {
     font-family: myFirstFont;
-    src: url(ChristineSignature-DO0P0.ttf);
+    src: url(AgreableScript-L3PdG.ttf);
 }
 
 * {
@@ -61,6 +61,8 @@ form {
     color: #F38BA0;
     font-size: 2.9rem;
     font-family: myFirstFont;
+    margin-right: 2px;
+    letter-spacing: 2px;
 }
 
 .login-content .input-div {
@@ -155,16 +157,18 @@ form {
 }
 
 a {
-    display: block;
+    /* display: block; */
+    margin: 5px;
     text-align: right;
     text-decoration: none;
     color: #B5EAEA;
     font-size: 0.9rem;
     transition: .3s;
+    color: #F38BA0;
 }
 
 a:hover {
-    color: #F38BA0;
+    color: #ff5f7f;
 }
 
 .btn {
@@ -204,10 +208,12 @@ a:hover {
     form {
         width: 290px;
     }
+
     .login-content h2 {
         font-size: 2.4rem;
         margin: 8px 0;
     }
+
     .img img {
         width: 400px;
     }
@@ -217,12 +223,15 @@ a:hover {
     .container {
         grid-template-columns: 1fr;
     }
+
     .img {
         display: none;
     }
+
     .wave {
         display: none;
     }
+
     .login-content {
         justify-content: center;
     }
