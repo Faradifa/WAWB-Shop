@@ -21,11 +21,31 @@ inputs.forEach(input => {
 
 $("#login-form").validate({
     errorElement: "p",
+	rules: {
+        username: {
+            required: true
+        },
+        password: {
+            required: true
+        },
+        confpassword: {
+            required: true
+        }
+	},
+    messages: {
+        username: {
+            required: "Silahkan isi username"
+        },
+        password: {
+            required: "Silahkan isi password"
+        },
+        confpassword: {
+            required: "Silahkan isi confpassword"
+        }
+	},
     errorPlacement: function ( error, element ) {
         element.addClass( "is-invalid" );
-        // Add the `help-block` class to the error element
         error.addClass( "invalid-feedback" );
-
         error.insertAfter(element.parent().parent());
 
     }
