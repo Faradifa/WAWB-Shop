@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.btn {
+    color: #F38BA0;
+    border-color: #F38BA0;
+}
+.btn:hover {
+    border-color: #F38BA0;
+    background-color: #F38BA0;
+}
