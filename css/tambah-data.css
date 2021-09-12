@@ -17,10 +17,6 @@ body {
     z-index: -1;
 }
 
-/*.btn {
-    color: #F38BA0;
-    border-color: #F38BA0;
-}*/
 .btn {
     display: block;
     width: 100%;
@@ -38,11 +34,8 @@ body {
     cursor: pointer;
     transition: .5s;
 }
-/*.btn:hover {
-    border-color: #F38BA0;
-    background-color: #F38BA0;
-}*/
+
 .btn:hover {
     background-position: right;
-    color:#fff;
+    color: #fff;
 }
