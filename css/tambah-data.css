@@ -9,6 +9,11 @@ body {
     overflow: hidden;
 }
 
+.container-fluid a {
+    font-size: 1.8rem;
+
+}
+
 .wave {
     position: fixed;
     bottom: 0;
