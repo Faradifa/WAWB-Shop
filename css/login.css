@@ -198,12 +198,17 @@ a:hover {
 
 .btn:hover {
     background-position: right;
+    color:#fff;
 }
 
 .text-center p {
     font-size: 0.9rem;
-    color: #B5EAEA;
+    color:#FFBCBC;
 }
+.text-muted {
+ color:#FFBCBC;
+}
+
 
 @media screen and (max-width: 1050px) {
     .container {
