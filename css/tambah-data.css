@@ -17,6 +17,15 @@ body {
     z-index: -1;
 }
 
+.card {
+    display: block;
+    width: 130%;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+}
+
 .btn {
     display: block;
     width: 100%;
