@@ -20,7 +20,7 @@ body {
 .card {
     display: block;
     width: 130%;
-    border-radius: 25px;
+    border-radius: 15px;
     outline: none;
     border: none;
     font-size: 1.4rem;
