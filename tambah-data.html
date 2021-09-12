@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Barang</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/data.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="img/logo7.png" alt="logo" style="width: 70px;">
+            <a class="navbar-brand" href="#">O-Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    </nav>
+
+    <div class="col-lg-6 col-md-12 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <form id="form-tambah-data">
+                    <div class="form-group">
+                        <label for="nama-barang">Nama Barang</label>
+                        <input type="text" class="form-control" id="nama-barang" name="nama-barang">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="harga">Harga</label>
+                            <input type="text" class="form-control" id="harga" name="harga">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="banyak">Banyak</label>
+                            <input type="number" class="form-control" id="banyak" name="banyak">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsi">Deskripsi</label>
+                        <textarea class="form-control" id="deskripsi" name="deskripsi" rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- JQuery-validate -->
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <!-- js -->
+    <script type="text/javascript" src="js/tambah-data.js"></script>
+</body>
+
+</html>
