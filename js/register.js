@@ -24,25 +24,30 @@ $("#login-form").validate({
 	rules: {
         username: {
             required: true,
-            minlength: 8
+            email: true
         },
         password: {
-            required: true
+            required: true,
+            minlength: 8
         },
         confpassword: {
-            required: true
+            required: true,
+            equalTo: "#password"
+
         }
 	},
     messages: {
         username: {
-            required: "Silahkan isi username",
-            minlength: "harus 8 char"
+            required: "Please enter your email",
+            email: "Please using valid email"
         },
         password: {
-            required: "Silahkan isi password"
+            required: "Please enter your password",
+            minlength: "Password minimum 8 characters"
         },
         confpassword: {
-            required: "Silahkan isi confpassword"
+            required: "Please confirm your password",
+            equalTo: "Password does not match"
         }
 	},
     errorPlacement: function ( error, element ) {
