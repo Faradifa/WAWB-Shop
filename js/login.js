@@ -21,46 +21,30 @@ inputs.forEach(input => {
 
 $("#login-form").validate({
     errorElement: "p",
+	rules: {
+        username: {
+            required: true,
+            email: true
+        },
+        password: {
+            required: true,
+            minlength: 8
+        }
+	},
+    messages: {
+        username: {
+            required: "Please enter your email",
+            email: "Please using valid email"
+        },
+        password: {
+            required: "Please enter your password",
+            minlength: "Password minimum 8 characters"
+        }
+	},
     errorPlacement: function ( error, element ) {
         element.addClass( "is-invalid" );
-        // Add the `help-block` class to the error element
         error.addClass( "invalid-feedback" );
-
         error.insertAfter(element.parent().parent());
 
     }
 });
-$("#my_form").validate({
-      rules: {
-        username : {
-            required: true,
-            minlength:2
-        },
-        password : {
-            required: true,
-            minlength: 5
-        },
-        /* confirm_password : {
-                required: true,
-                minlength: 5,
-        equalTo: "#password"
-        }, */
-        newsletter: "required"
-      },
-      messages : {
-        username: {
-            required: "Silahkan masukkan sebuah nama pengguna",
-            minlength: "Nama pengguna harus berisi paling sedikit 2 characters"
-        },
-        password: {
-            required: "Silahkan isi password",
-            minlength: "Password anda paling sedikit berisi 5 huruf"
-        },
-        /*confirm_password: {
-            required: "Silahkan isi password",
-            minlength: "Password anda paling sedikit berisi 5 huruf",
-            equalTo: "Silahkan masukkan password yang sama seperti di atas"
-        },*/
-            newsletter: "Silahkan checklist opsi anda"
-      }
-    });
