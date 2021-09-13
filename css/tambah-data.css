@@ -16,3 +16,12 @@ body {
     height: 100%;
     z-index: -1;
 }
+
+.btn {
+    color: #F38BA0;
+    border-color: #F38BA0;
+}
+.btn:hover {
+    border-color: #F38BA0;
+    background-color: #F38BA0;
+}
